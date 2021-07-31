@@ -8,3 +8,26 @@ ion-header{
 .move-right{
   margin-left: 1vh;
 }
+*{
+  background-color: white;
+}
+.blacked{
+  position: relative;
+    z-index: 2;
+    bottom: 2vh;
+    border: 2px solid black;
+    border-radius: 4vh;
+    width: calc(100% - 7%);
+    margin: auto;
+    ion-tab-button{
+      --background: black;
+      background-color: black;
+      ion-icon{
+        background-color: black;
+      }
+      ion-label{
+        background-color: black;
+        color: white;
+      }
+    }
+}
