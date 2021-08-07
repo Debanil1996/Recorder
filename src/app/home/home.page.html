@@ -1,13 +1,17 @@
 
     <ion-tabs>
         <ion-tab-bar class="blacked" slot="bottom">
-            <ion-tab-button tab="gallery">
-                <ion-icon src="assets/svgs/gallery.svg"></ion-icon>
-                <ion-label color="light">Gallery</ion-label>
+            <ion-tab-button  tab="gallery" (click)="changeGallery('gallery')">
+                <ion-icon src="assets/svgs/gallery.svg" [ngClass]="{'sizeIncrease': focus === 'gallery'}"></ion-icon>
+                <ion-label  color="light">Gallery</ion-label>
             </ion-tab-button>
-            <ion-tab-button tab="invoice">
-                <ion-icon src="assets/svgs/invoice.svg"></ion-icon>
-                <ion-label color="light">Invoice</ion-label>
+            <ion-tab-button tab="invoice" (click)="changeGallery('invoice')">
+                <ion-icon  src="assets/svgs/invoice.svg" [ngClass]="{'sizeIncrease': focus === 'invoice'}"></ion-icon>
+                <ion-label  color="light">Invoice</ion-label>
+            </ion-tab-button>
+            <ion-tab-button   (click)="changeGallery('cart')" tab="cart">
+                <ion-icon src="assets/svgs/Cart1.svg" [ngClass]="{'sizeIncrease': focus === 'cart'}"></ion-icon>
+                <ion-label  color="light">Cart</ion-label>
             </ion-tab-button>
         </ion-tab-bar>
     </ion-tabs>

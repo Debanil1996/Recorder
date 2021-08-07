@@ -1,5 +1,6 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
+@import "../assets/scss/color-pallete.scss";
 
 /** Ionic CSS Variables **/
 :root {
@@ -153,8 +154,8 @@
    */
 
   .ios body {
-    --ion-background-color: white;
-    --ion-background-color-rgb: 0,0,0;
+    --ion-background-color: $background;
+    --ion-background-color-rgb: 18,18,18;
 
     --ion-text-color: #ffffff;
     --ion-text-color-rgb: 255,255,255;
@@ -197,7 +198,7 @@
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: $background;
     --ion-background-color-rgb: 18,18,18;
 
     --ion-text-color: #ffffff;
@@ -233,6 +234,9 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+ion-content{
+  --ion-background-color: $background;
 }
 
 /* Importing Bootstrap SCSS file. */

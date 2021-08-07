@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style>
-<polyline class="st0" points="19,3 19,9 25,9 19,3 7,3 7,29 25,29 25,9 "/>
-<line class="st0" x1="18" y1="14" x2="21" y2="14"/>
-<line class="st0" x1="18" y1="18" x2="21" y2="18"/>
-<line class="st0" x1="16" y1="22" x2="21" y2="22"/>
-<line class="st0" x1="13" y1="12" x2="13" y2="13"/>
-<line class="st0" x1="13" y1="19" x2="13" y2="20"/>
-<path class="st0" d="M14,13h-1.5c-0.8,0-1.5,0.7-1.5,1.5v0c0,0.8,0.7,1.5,1.5,1.5h1c0.8,0,1.5,0.7,1.5,1.5v0c0,0.8-0.7,1.5-1.5,1.5
-	H12"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 512 512" width="512pt" height="512pt"><defs><clipPath id="_clipPath_ICBX1NanJWKNRmXNdno6X30Ko9CfoVkk"><rect width="512" height="512"/></clipPath></defs><g clip-path="url(#_clipPath_ICBX1NanJWKNRmXNdno6X30Ko9CfoVkk)"><rect x="308.669" y="138" width="85.331" height="42.669" transform="matrix(1,0,0,1,0,0)" fill="rgb(255,255,255)"/><rect x="308.669" y="223.331" width="128" height="42.669" transform="matrix(1,0,0,1,0,0)" fill="rgb(255,255,255)"/><rect x="308.669" y="308.669" width="128" height="42.662" transform="matrix(1,0,0,1,0,0)" fill="rgb(255,255,255)"/><path d=" M 491.83 385.168 L 415.331 461.622 L 381.501 427.83 L 351.331 458 L 415.331 522 L 522 415.331 L 491.83 385.168 Z " fill="rgb(255,255,255)"/><path d=" M 202 266 L 159.331 266 C 147.542 266 138 256.458 138 244.669 L 137.962 244.669 L 138 244.669 C 138 232.88 147.542 223.338 159.331 223.338 L 159.331 223.312 L 159.331 223.331 L 202 223.331 C 213.789 223.331 223.331 232.874 223.331 244.662 L 266 244.662 C 266 209.328 237.334 180.662 202 180.662 L 202 138 L 159.331 138 L 159.331 180.669 L 159.331 180.669 C 123.997 180.669 95.331 209.334 95.331 244.669 L 95.331 244.669 C 95.331 280.003 123.997 308.669 159.331 308.669 L 202 308.669 C 213.789 308.669 223.331 318.205 223.331 330 L 223.286 330 C 223.286 341.795 213.744 351.331 201.955 351.331 L 159.331 351.331 C 147.542 351.331 138 341.795 138 330 L 95.331 330 C 95.331 365.334 123.997 394 159.331 394 L 159.331 436.669 L 202 436.669 L 202 394 C 237.334 393.955 265.955 365.334 265.955 330 L 266 330 C 266 294.666 237.334 266 202 266 Z " fill="rgb(255,255,255)"/><path d=" M 266 10 L 266 52.669 L 223.331 52.669 L 223.331 10 L 180.669 10 L 180.669 52.669 L 138 52.669 L 138 10 L 95.331 10 L 95.331 52.669 L 52.669 52.669 L 52.669 10 L 10 10 L 10 522 L 308.669 522 L 308.669 479.331 L 52.669 479.331 L 52.669 95.331 L 479.331 95.331 L 479.331 351.331 L 522 351.331 L 522 10 L 266 10 Z " fill="rgb(255,255,255)"/></g></svg>

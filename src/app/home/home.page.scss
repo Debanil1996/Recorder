@@ -1,3 +1,4 @@
+@import "../../assets/scss/color-pallete.scss";
 ion-header{
   box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
@@ -9,13 +10,14 @@ ion-header{
   margin-left: 1vh;
 }
 *{
-  background-color: white;
+  background-color: $background;
 }
 .blacked{
   position: relative;
     z-index: 2;
     bottom: 2vh;
     border: 2px solid black;
+    background-color: black;
     border-radius: 4vh;
     width: calc(100% - 7%);
     margin: auto;
@@ -30,4 +32,8 @@ ion-header{
         color: white;
       }
     }
+}
+
+.sizeIncrease{
+  font-size: 4vh !important;
 }
