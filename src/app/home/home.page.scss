@@ -1,7 +1,7 @@
 @import "../../assets/scss/color-pallete.scss";
 ion-header{
-  box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+  border: none;
+  box-shadow: none;
 }
 .adjust-img{
   width: 3vh;
@@ -9,9 +9,7 @@ ion-header{
 .move-right{
   margin-left: 1vh;
 }
-*{
-  background-color: $background;
-}
+
 .blacked{
   position: relative;
     z-index: 2;
@@ -36,4 +34,22 @@ ion-header{
 
 .sizeIncrease{
   font-size: 4vh !important;
+}
+.header{
+  ion-icon{
+    font-size: 4vh;
+  }
+  h2{
+    margin-top: 0;
+    font-family: cursive;
+    font-size: 4vh;
+  }
+}
+
+.adjust-sppech-img{
+  width: 4vh;
+    position: relative;
+    top: 1vh;
+    left: 1vh;
+    z-index: 3;
 }

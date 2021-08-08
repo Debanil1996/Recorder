@@ -238,6 +238,12 @@
 ion-content{
   --ion-background-color: $background;
 }
+ion-header{
+  border: none;
+    box-shadow: none;
+    background: none;
+    --ion-background-color:none;
+}
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

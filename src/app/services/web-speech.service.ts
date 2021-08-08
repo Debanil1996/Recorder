@@ -7,7 +7,6 @@ interface IWindow extends Window {
   webkitSpeechRecognition: any;
   SpeechRecognition: any;
 }
-
 @Injectable({
   providedIn: 'root',
 })

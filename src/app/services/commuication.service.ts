@@ -19,123 +19,26 @@ export class CommuicationService {
     },
     'who are you': () => {
       const msg = new SpeechSynthesisUtterance(
-        'I am your tasty bytes assistant help you'
+        'I am your tasty bytes assistant help you and find the cakes you want'
       );
       msg.voice = this.selected;
       window.speechSynthesis.speak(msg);
     },
     'who created you': () => {
       const msg = new SpeechSynthesisUtterance(
-        'I was single handedly created'
+        'I was created by Debanil for his customer debasmita'
       );
       msg.voice = this.selected;
       window.speechSynthesis.speak(msg);
-    },
-    search: () => {
-      this.zone.run(() => {
-        this.hybridController.emit({ search: true });
-      });
-    },
-    diagnosis: () => {
-      this.zone.run(() => {
-        this.hybridController.emit({ value: 'diagnosis', speech: true });
-      });
-    },
-    drugs: () => {
-      this.zone.run(() => {
-        this.hybridController.emit({ value: 'drugs', speech: true });
-      });
-    },
-    investigations: () => {
-      this.zone.run(() => {
-        this.hybridController.emit({ value: 'investigations', speech: true });
-      });
     },
     'r o s': () => {
       this.zone.run(() => {
         this.hybridController.emit({ value: 'ros', speech: true });
       });
     },
-    examination: () => {
-      this.zone.run(() => {
-        this.hybridController.emit({ value: 'examination', speech: true });
-      });
-    },
-    allergy: () => {
-      this.zone.run(() => {
-        this.hybridController.emit({ value: 'allergy', speech: true });
-      });
-    },
-    history: () => {
-      this.zone.run(() => {
-        this.hybridController.emit({ value: 'history', speech: true });
-      });
-    },
-    procedure: () => {
-      this.zone.run(() => {
-        this.hybridController.emit({ value: 'procedure', speech: true });
-      });
-    },
-    
-    'what can you do': () => {
-      const msg = new SpeechSynthesisUtterance(
-        'showing all the available voice commands'
-      );
-      msg.voice = this.selected;
-      window.speechSynthesis.speak(msg);
-    },
-    'show tasty bytes list': () => {
-      this.zone.run(() => {
-        this.patientList.emit('patientList');
-      });
-    },
-    'show tasty bytes profile': () => {
-    },
-    'show customer list': () => {
-  
-      this.patientList.emit('doctorList');
-    },
-    'open invoice': () => {
-      this.navBarOptions.emit('openBilling');
-    },
-    'open r x': () => {
-      this.navBarOptions.emit('openRx');
-    },
-    'upload a document': () => {
-      this.navBarOptions.emit('openUpload');
-    },
-    'add vitals': () => {
-      this.navBarOptions.emit('openVitals');
-    },
-    'Change to dark mode': () => {
-      this.navBarOptions.emit('onlyDarkMode');
-    },
-    'Change to white mode': () => {
-      this.navBarOptions.emit('onlyWhiteMode');
-    },
-    'open email': () => {
-      document.getElementById('email-href').click();
-    },
     logout: () => {
       this.navBarOptions.emit('logout');
-    },
-    'next customer': () => {
-      const msg = new SpeechSynthesisUtterance(
-        'This command is a work in progress'
-      );
-      msg.voice = this.selected;
-      window.speechSynthesis.speak(msg);
-    },
-    'Start encounter': () => {
-      this.zone.run(() => {
-        this.startAndSave.emit('start');
-      });
-    },
-    'Save encounter': () => {
-      this.zone.run(() => {
-        this.startAndSave.emit('save');
-      });
-    },
+    },    
   };
   url: any;
   voices;
@@ -184,7 +87,7 @@ export class CommuicationService {
           .map((el: any) => el.confidence)
           .reduce((iMax, x, i, arr) => (x > arr[iMax] ? i : iMax), 0);
         const transcript = result[indexOfMaxValue].transcript;
-        console.log(transcript);
+        console.log("Speech spoken : ",transcript);
         this.whateverSaid.next([...this.whateverSaid.value, ...[transcript]]);
       }
     });

@@ -1,0 +1,22 @@
+@import "../../../assets/scss/color-pallete.scss";
+.gallery-cards{
+    background: white;
+    width: 23vh;
+}
+.description{
+    display: flex;
+    margin-top: 2vh;
+    #cake-name{
+        font-size: 2vh;
+        font-family: Georgia;
+        font-weight: 600;
+        padding-top: 1vh;
+    }
+    #amount{
+        font-size: 2vh;
+        font-family: Georgia;
+        white-space: nowrap;
+        align-self: center;
+        margin-left: 1vh;
+    }
+}

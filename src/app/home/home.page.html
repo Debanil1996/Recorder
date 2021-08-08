@@ -1,4 +1,27 @@
 
+    <header  class="header">
+        <ion-row class="d-flex flex-row">
+            <ion-col size="3">
+                <ion-icon src="assets/svgs/Menu.svg"></ion-icon>
+            </ion-col>
+            <ion-col size="7">
+                <h2>Tasty Bytes</h2>
+            </ion-col>
+            <ion-col size="2">
+                <ng-container *ngIf="startSpeech">
+                    <img 
+                    class="adjust-sppech-img"
+                    (click)="toggleSpeech()" src="assets/svgs/voice.png">
+                </ng-container>
+                <ng-container *ngIf="!startSpeech">
+                    <img 
+                        class="adjust-sppech-img"
+                    (click)="toggleSpeech()" src="assets/svgs/voiceMuted.png">
+                </ng-container>
+                
+            </ion-col>
+        </ion-row>
+    </header>
     <ion-tabs>
         <ion-tab-bar class="blacked" slot="bottom">
             <ion-tab-button  tab="gallery" (click)="changeGallery('gallery')">
