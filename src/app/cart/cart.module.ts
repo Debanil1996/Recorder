@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { CartPageRoutingModule } from './cart-routing.module';
 
 import { CartPage } from './cart.page';
+import { PdetailsCakeComponent } from './pdetails-cake/pdetails-cake.component';
+import { PaymentCakeComponent } from './payment-cake/payment-cake.component';
 
 @NgModule({
   imports: [
@@ -15,6 +17,20 @@ import { CartPage } from './cart.page';
     IonicModule,
     CartPageRoutingModule
   ],
-  declarations: [CartPage]
+  declarations: [
+    CartPage,
+    PdetailsCakeComponent,
+    PaymentCakeComponent
+  ],
+  entryComponents:[
+    CartPage,
+    PdetailsCakeComponent,
+    PaymentCakeComponent
+  ],
+  exports:[
+    CartPage,
+    PdetailsCakeComponent,
+    PaymentCakeComponent
+  ]
 })
 export class CartPageModule {}

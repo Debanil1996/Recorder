@@ -8,13 +8,15 @@ import { GalleryPageRoutingModule } from './gallery-routing.module';
 
 import { GalleryPage } from './gallery.page';
 import { GalleryCardsComponent } from './gallery-cards/gallery-cards.component';
+import { CartPageModule } from '../cart/cart.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GalleryPageRoutingModule
+    GalleryPageRoutingModule,
+    CartPageModule
   ],
   declarations: [
     GalleryPage,

@@ -11,5 +11,6 @@ export class GalleryPage implements OnInit {
 
   ngOnInit() {
   }
+  
 
 }
