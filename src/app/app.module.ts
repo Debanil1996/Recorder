@@ -14,11 +14,13 @@ import { File } from '@ionic-native/file/ngx';
 import { FileChooser } from '@ionic-native/file-chooser/ngx';
 import { FilePath } from '@ionic-native/file-path/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgbModule,CommonModule
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgbModule,CommonModule,
+    HttpClientModule
     ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   FileOpener,

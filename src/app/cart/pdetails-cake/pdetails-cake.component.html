@@ -1,7 +1,7 @@
 <main>
   <ion-row>
     <ion-col size="12" class="cake-display">
-      <ion-img src="https://scontent.fblr14-1.fna.fbcdn.net/v/t1.6435-9/110059290_904016690105653_4943020755107421535_n.jpg?_nc_cat=109&ccb=1-4&_nc_sid=8bfeb9&_nc_ohc=fKRxxjkiI5oAX9JY9TO&_nc_ht=scontent.fblr14-1.fna&oh=7ac23b187e9f3f43e28416f88bf3e791&oe=61352DBD"></ion-img>
+      <ion-img [src]="cake?.cake_img"></ion-img>
     </ion-col>
   </ion-row>
   <ion-row>
@@ -11,8 +11,7 @@
   </ion-row>
   <ion-row>
     <ion-col size="12" class="description">
-      <p>This cake is called strawberry cake manufactured with the delight of strawberry and cupcake
-        It is so delighful that you would love having it .
+      <p>{{cake?.description}}
       </p>
     </ion-col>
   </ion-row>
@@ -22,6 +21,6 @@
         Price    
       </h2>
     </ion-col>
-    <ion-col class="price" size="6">₹ 200</ion-col>
+    <ion-col class="price" size="6">₹ {{cake?.price}}</ion-col>
   </ion-row>
 </main>

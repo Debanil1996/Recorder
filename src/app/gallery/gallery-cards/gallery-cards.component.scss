@@ -1,7 +1,8 @@
 @import "../../../assets/scss/color-pallete.scss";
 .gallery-cards{
     background: white;
-    width: 23vh;
+    width: calc(100vh - 73vh);
+    height: calc(100vh - 73vh);
 }
 .description{
     display: flex;
