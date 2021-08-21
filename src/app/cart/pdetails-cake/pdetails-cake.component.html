@@ -1,4 +1,7 @@
 <main>
+  <div class="adjust-back">
+    <ion-img (click)="close()" src="assets/svgs/back.svg"></ion-img>
+  </div>
   <ion-row>
     <ion-col size="12" class="cake-display">
       <ion-img [src]="cake?.cake_img"></ion-img>
@@ -23,4 +26,20 @@
     </ion-col>
     <ion-col class="price" size="6">₹ {{cake?.price}}</ion-col>
   </ion-row>
+  <ion-footer class="ion-no-border place-bottom">
+    <ion-row>
+      <ion-col size="12" class="cart-col">
+        <ion-button class="addCart">
+          Add to cart
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" class="cart-col">
+        <ion-button class="buyNow">
+          Buy Now
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
 </main>

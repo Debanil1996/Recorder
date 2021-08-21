@@ -36,3 +36,33 @@
         padding-top: 5vh;
     }
 }
+.cart-col{
+    display: flex;
+    justify-content: center;
+}
+.place-bottom{
+    position: relative;
+    top: calc(100% - 70vh);
+}
+.addCart{
+    width: 21vh;
+    height: 6vh;
+    --background: orange;
+    --border-radius: 2vh;
+}
+.buyNow{
+    width: 21vh;
+    height: 6vh;
+    --background: #0d8b01;
+    --border-radius: 2vh;
+}
+
+.adjust-back{
+    position: absolute;
+    z-index: 3;
+    left: 2vh;
+    top: 3vh;
+    ion-img{
+        width: 4vh;
+    }
+}

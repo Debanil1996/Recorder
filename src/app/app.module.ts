@@ -15,6 +15,7 @@ import { FileChooser } from '@ionic-native/file-chooser/ngx';
 import { FilePath } from '@ionic-native/file-path/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 import { HttpClientModule } from '@angular/common/http';
+import { httpInterceptorProviders } from './interceptors';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
   File,
   FileChooser,
   FilePath,
-  FileTransfer
+  FileTransfer,
+  httpInterceptorProviders
   ],
   bootstrap: [AppComponent],
   exports:[MaterialModuleNew]
