@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StorageService } from '../services/storage.service';
+import { AuthserviceService } from './authservice.service';
 
 @Component({
   selector: 'app-auth',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthPage implements OnInit {
 
-  constructor() { }
+  constructor(private authSercice:AuthserviceService,
+    private storage:StorageService) { }
 
   ngOnInit() {
+    this.authSercice.postLogin("+9123343444").subscribe((res)=>{
+      this.storage.setItem("token",res?.token);
+    })
   }
 
 }

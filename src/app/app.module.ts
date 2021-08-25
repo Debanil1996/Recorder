@@ -1,7 +1,10 @@
+import { IonicStorageModule } from '@ionic/storage';
+import { StorageService } from './services/storage.service';
+import { AuthGuard } from './guards/auth-guard';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
+import { RouteReuseStrategy, RouterModule } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
@@ -21,7 +24,9 @@ import { httpInterceptorProviders } from './interceptors';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgbModule,CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    IonicStorageModule.forRoot(),
+    RouterModule
     ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   FileOpener,
