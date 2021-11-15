@@ -228,7 +228,7 @@
 
     --ion-item-background: #1e1e1e;
 
-    --ion-toolbar-background: #1f1f1f;
+    --ion-toolbar-background: #ffe6e7;
 
     --ion-tab-bar-background: #1f1f1f;
 
@@ -240,9 +240,12 @@ ion-content{
 }
 ion-header{
   border: none;
-    box-shadow: none;
-    background: none;
-    --ion-background-color:none;
+    --ion-background-color:ffe6e7;
+    ion-toolbar{
+      color: black;
+      background-color: ffe6e7;
+      --background:ffe6e7;
+    }
 }
 ion-modal{
   --ion-background-color: white;

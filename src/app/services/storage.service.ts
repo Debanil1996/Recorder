@@ -17,7 +17,7 @@ export class StorageService {
   }
 
   public async clearStore() {
-    const ret = await this.storage.clear();
+    const ret = this.storage.clear();
     return ret;
   }
 

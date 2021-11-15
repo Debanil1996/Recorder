@@ -10,15 +10,14 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/auth',
     pathMatch: 'full'
   },
   {
     path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule),
-    canActivate:[AuthGuard]
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
   }
-  
+
 ];
 
 @NgModule({

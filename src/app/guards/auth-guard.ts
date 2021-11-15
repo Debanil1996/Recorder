@@ -1,3 +1,4 @@
+import { StorageService } from './../services/storage.service';
 import { Location, LocationStrategy } from '@angular/common';
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot,Router } from '@angular/router';
@@ -11,14 +12,16 @@ export class AuthGuard implements CanActivate {
     constructor(
         private _router:Router,
         private _authService: AuthserviceService,
-        private _location:Location
+        private _location:Location,
+        private storage:StorageService
     ){
 
     }
 
 
     async canActivate(route:ActivatedRouteSnapshot,state:RouterStateSnapshot){
-        if(this._authService.getToken()){
+      const token=await this.storage.get('token');
+      if(!!token){
            return true;
         }
         else{
@@ -27,6 +30,6 @@ export class AuthGuard implements CanActivate {
             });
             return false;
         }
-        
+
     }
 }

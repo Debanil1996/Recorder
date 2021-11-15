@@ -15,8 +15,8 @@ export class AuthserviceService {
   postLogin(phone_no):Observable<any>{
     return this.http.post(`http://localhost:8080/cake/login`,phone_no);
   }
-  public getToken(){
-    return !!this.storage.get('token');
+  public async getToken(){
+    return this.storage.get('token');
   }
 
 }

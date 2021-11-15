@@ -13,9 +13,8 @@ export class AuthPage implements OnInit {
     private storage:StorageService) { }
 
   ngOnInit() {
-    this.authSercice.postLogin("+9123343444").subscribe((res)=>{
-      this.storage.setItem("token",res?.token);
-    })
+      // this.storage.setItem("token","jhghjghj");
+      this.storage.clearStore();
   }
 
 }
