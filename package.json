@@ -13,7 +13,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ngcc"
+    "postinstall": "ngcc && jetifier"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +28,7 @@
     "@angular/platform-browser": "~9.1.6",
     "@angular/platform-browser-dynamic": "~9.1.6",
     "@angular/router": "~9.1.6",
+    "@capacitor/android": "^2.2.1",
     "@capacitor/core": "2.2.1",
     "@ionic-native/android-permissions": "^5.33.0",
     "@ionic-native/background-mode": "^5.32.0",
@@ -44,6 +45,7 @@
     "@ionic-native/splash-screen": "^5.0.0",
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^5.0.0",
+    "@ionic/cli": "^7.2.0",
     "@ionic/storage": "^2.3.1",
     "@ng-bootstrap/ng-bootstrap": "^6.2.0",
     "bootstrap": "^4.4.0",
@@ -52,8 +54,10 @@
     "cordova-plugin-screen-orientation": "^3.0.2",
     "cordova-res": "^0.15.3",
     "enablex-cordova-plugin": "^1.0.7",
+    "es6-promise-plugin": "^4.2.2",
     "file-saver": "^2.0.2",
     "hammerjs": "^2.0.8",
+    "jetifier": "^2.0.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "pdfmake": "^0.1.68",

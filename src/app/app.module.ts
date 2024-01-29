@@ -11,7 +11,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {  MaterialModuleNew } from './material.module';
+import { MaterialModuleNew } from './material.module';
 import { FileOpener } from '@ionic-native/file-opener/ngx';
 import { File } from '@ionic-native/file/ngx';
 import { FileChooser } from '@ionic-native/file-chooser/ngx';
@@ -19,24 +19,32 @@ import { FilePath } from '@ionic-native/file-path/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 import { HttpClientModule } from '@angular/common/http';
 import { httpInterceptorProviders } from './interceptors';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgbModule,CommonModule,
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    NgbModule,
+    CommonModule,
     HttpClientModule,
     IonicStorageModule.forRoot(),
-    RouterModule
-    ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-  FileOpener,
-  File,
-  FileChooser,
-  FilePath,
-  FileTransfer,
-  httpInterceptorProviders
+    RouterModule,
+    BrowserAnimationsModule,
+  ],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    FileOpener,
+    File,
+    FileChooser,
+    FilePath,
+    FileTransfer,
+    httpInterceptorProviders,
   ],
   bootstrap: [AppComponent],
-  exports:[MaterialModuleNew]
+  exports: [MaterialModuleNew],
 })
 export class AppModule {}

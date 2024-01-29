@@ -38,7 +38,7 @@ export class CommuicationService {
     },
     logout: () => {
       this.navBarOptions.emit('logout');
-    },    
+    },
   };
   url: any;
   voices;
@@ -62,12 +62,12 @@ export class CommuicationService {
     private zone:NgZone
   ) {
     this.startAnnyang();
-    window.speechSynthesis.onvoiceschanged = () => {
+    window?.speechSynthesis ? window.speechSynthesis.onvoiceschanged = () => {
       this.voices = window.speechSynthesis.getVoices();
       this.selected = this.voices.filter((element) => {
         return element.lang == 'hi-IN';
       })[0];
-    };
+    }:null;
     this.getWeather();
   }
 

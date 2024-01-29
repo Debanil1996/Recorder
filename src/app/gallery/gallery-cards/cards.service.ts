@@ -1,3 +1,4 @@
+import { environment } from './../../../environments/environment';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -12,6 +13,6 @@ export class CardsService {
   ) { }
 
   getValues():Observable<any>{
-    return this.http.get(`http://localhost:8080/cake`);
+    return this.http.get(`${environment.serverUrl}/cake`);
   }
 }
