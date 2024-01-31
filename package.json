@@ -15,7 +15,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "clear": "ngcc --clear",
-    "postinstall": "npm ci && ngcc && jetifier"
+    "postinstall": "ngcc && jetifier"
   },
   "private": true,
   "dependencies": {
@@ -72,7 +72,7 @@
     "@angular-devkit/build-angular": "^0.1002.4",
     "@angular/cli": "^10.2.4",
     "@angular/compiler": "^10.2.5",
-    "@angular/compiler-cli": "^17.1.1",
+    "@angular/compiler-cli": "^16.2.12",
     "@angular/language-service": "^10.2.5",
     "@capacitor/cli": "2.2.1",
     "@ionic/angular-toolkit": "^2.1.1",
