@@ -5,15 +5,17 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "dev-start": "ng serve --port 3000 -o",
+    "start": " ionic serve",
+    "mac-start": "NODE_OPTIONS=--openssl-legacy-provider ionic serve --port 4000 -o",
+    "mac-build": "NODE_OPTIONS=--openssl-legacy-provider ionic build",
     "dev-build": "ionic cordova build android --prod --release",
     "platform-gen": "ionic cordova integrations enable cordova --add",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ngcc && jetifier"
+    "clear": "ngcc --clear",
+    "postinstall": "npm ci && ngcc && jetifier"
   },
   "private": true,
   "dependencies": {
@@ -70,7 +72,7 @@
     "@angular-devkit/build-angular": "~0.901.5",
     "@angular/cli": "~9.1.5",
     "@angular/compiler": "~9.1.6",
-    "@angular/compiler-cli": "~9.1.6",
+    "@angular/compiler-cli": "^17.1.1",
     "@angular/language-service": "~9.1.6",
     "@capacitor/cli": "2.2.1",
     "@ionic/angular-toolkit": "^2.1.1",
@@ -107,7 +109,7 @@
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "typescript": "^5.3.3"
   },
   "description": "An Ionic project",
   "cordova": {
