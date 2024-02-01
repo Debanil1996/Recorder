@@ -1,8 +1,7 @@
-import { IonicStorageModule } from '@ionic/storage';
 import { StorageService } from './services/storage.service';
 import { AuthGuard } from './guards/auth-guard';
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy, RouterModule } from '@angular/router';
 
@@ -22,6 +21,7 @@ import { httpInterceptorProviders } from './interceptors';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [AppComponent],
   imports: [
     BrowserModule,
@@ -30,7 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgbModule,
     CommonModule,
     HttpClientModule,
-    IonicStorageModule.forRoot(),
+
     RouterModule,
     BrowserAnimationsModule,
   ],

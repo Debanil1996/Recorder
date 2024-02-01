@@ -8,10 +8,10 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
     canActivate:[AuthGuard]
   },
-  // {
-  //   path: 'carousel',
-  //   loadChildren: () => import('./carousel/carousel.module').then( m => m.CarouselModule),
-  // },
+  {
+    path: 'carousel',
+    loadChildren: () => import('./carousel/carousel.module').then( m => m.CarouselModule),
+  },
   {
     path: '',
     redirectTo: '/carousel',

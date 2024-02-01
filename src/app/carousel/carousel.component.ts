@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent implements OnInit {
-
-  constructor() { }
+  slideOptions = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    speed: 400,
+    spaceBetween: 10,
+    // Other options
+    allowTouchMove: true,
+  };
+  constructor() {}
 
   ngOnInit() {}
-
 }
