@@ -22,11 +22,11 @@ import { PaymentCakeComponent } from './payment-cake/payment-cake.component';
     PdetailsCakeComponent,
     PaymentCakeComponent
   ],
-  entryComponents:[
-    CartPage,
-    PdetailsCakeComponent,
-    PaymentCakeComponent
-  ],
+  // entryComponents:[
+  //   CartPage,
+  //   PdetailsCakeComponent,
+  //   PaymentCakeComponent
+  // ],
   exports:[
     CartPage,
     PdetailsCakeComponent,

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 import {
     HttpEvent, HttpInterceptor, HttpHandler, HttpRequest
 } from '@angular/common/http';
-import {fromPromise} from "rxjs/internal/observable/fromPromise";
+import {from} from "rxjs";
 import {mergeMap} from  "rxjs/operators"
 
 @Injectable({
@@ -15,7 +15,7 @@ export class AuthHeaderInterceptor implements HttpInterceptor {
     constructor(private _storage:StorageService){
     }
     getToken():Observable<any> {
-        return fromPromise(this._storage.get("token"))    
+        return from(this._storage.get("token"))
     }
     intercept(req: HttpRequest<any>, next: HttpHandler) {
         return this.getToken().pipe(mergeMap((token)=>{

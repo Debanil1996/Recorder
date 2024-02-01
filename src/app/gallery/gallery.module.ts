@@ -22,10 +22,10 @@ import { CartPageModule } from '../cart/cart.module';
     GalleryPage,
     GalleryCardsComponent
   ],
-  entryComponents:[
-    GalleryPage,
-    GalleryCardsComponent
-  ],
+  // entryComponents:[
+  //   GalleryPage,
+  //   GalleryCardsComponent
+  // ],
   providers:[]
 })
 export class GalleryPageModule {}

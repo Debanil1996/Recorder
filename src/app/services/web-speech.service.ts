@@ -16,7 +16,7 @@ export class WebSpeechService {
   intervalForStartwakeWord;
   private wakeWord;
   inter;
-  timer: NodeJS.Timer;
+  timer: any;
 
   webSpeechListener = new EventEmitter();
   sendor = new EventEmitter<any>();
@@ -27,7 +27,7 @@ export class WebSpeechService {
     private injector: Injector,
     private ngZone: NgZone,
   ) {
-    
+
     console.log(this.currentUser?.preferred_language);
     this.language = this.currentUser?.preferred_language ? 'de-DE' : 'en-us';
 
@@ -45,7 +45,7 @@ export class WebSpeechService {
 
   async record(component, chan, index, emmiter?) {
     if (index === 'index') {
-      
+
     }
     this.inter = await this.wakeWord.stopAnnyang().then(() => {
       if (!this.checkStream()) {
@@ -61,7 +61,7 @@ export class WebSpeechService {
   startSpeech(component, channel, index) {
     this.channel = channel;
     let resulted = '';
-    
+
 
     const { webkitSpeechRecognition }: IWindow = (window as unknown) as IWindow;
     this.speechRecognition = new webkitSpeechRecognition();
@@ -85,7 +85,7 @@ export class WebSpeechService {
               term = _.trim(transcript);
               resulted = term;
               if (this.speechRecognition) {
-                
+
               }
             });
           }
@@ -148,7 +148,7 @@ export class WebSpeechService {
       this.speechRecognition = null;
       this.wakeWord.startAnnyang();
     }
-    
+
 
     if (index == 'index') {
       this.ngZone.run(() => {

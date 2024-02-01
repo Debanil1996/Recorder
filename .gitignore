@@ -33,3 +33,4 @@ npm-debug.log*
 /.gradle
 /resources
 /package-lock.json
+/.angular/*

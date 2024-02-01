@@ -21,10 +21,10 @@ import { LoginComponent } from './login/login.component';
     LoginComponent,
     SignupComponent
   ],
-  entryComponents:[
-    AuthPage,
-    LoginComponent,
-    SignupComponent
-  ]
+  // entryComponents:[
+  //   AuthPage,
+  //   LoginComponent,
+  //   SignupComponent
+  // ]
 })
 export class AuthPageModule {}
