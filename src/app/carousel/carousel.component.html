@@ -1,7 +1,7 @@
 <ion-app>
   <ion-content>
-        <ion-slides [options]="slideOptions">
-          <ion-slide>
+        <swiper-container [modules]="swiperModules">
+          <swiper-slide>
             <div class="slide">
               <h2>Welcome</h2>
               <p>
@@ -9,8 +9,8 @@
                 demonstration of proper code use.
               </p>
             </div>
-          </ion-slide>
-          <ion-slide>
+          </swiper-slide>
+          <swiper-slide>
             <div class="slide">
               <h2>Welcome</h2>
               <p>
@@ -18,8 +18,8 @@
                 demonstration of proper code use.
               </p>
               </div>
-          </ion-slide>
-          <ion-slide>
+          </swiper-slide>
+          <swiper-slide>
             <div class="slide">
               <h2>Welcome</h2>
               <p>
@@ -27,7 +27,7 @@
                 demonstration of proper code use.
               </p>
               </div>
-          </ion-slide>
-        </ion-slides>
+          </swiper-slide>
+        </swiper-container>
   </ion-content>
 </ion-app>

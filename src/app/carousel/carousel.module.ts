@@ -8,10 +8,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [CarouselComponent],
   imports: [
     IonicModule.forRoot(),
     CommonModule,
+    BrowserModule,
     CarouselRoutingModule
   ]
 })
